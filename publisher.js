@@ -1,6 +1,6 @@
 // publisher.js
 const mqtt = require("mqtt");
-const client = mqtt.connect("mqtt://localhost:1883");
+const client = mqtt.connect("ws://broker.hivemq.com:8000/mqtt");
 
 client.on("connect", function () {
   setInterval(function () {
